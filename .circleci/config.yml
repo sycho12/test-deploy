@@ -8,4 +8,4 @@ jobs:
     steps:
       - checkout
       - run: pip install ansible-lint --user
-      - run: ansible-lint ./*.yml
+      - run: /home/circleci/.local/bin/ansible-lint ./*.yml
