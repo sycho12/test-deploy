@@ -7,5 +7,5 @@ jobs:
     working_directory: ~/work/repo
     steps:
       - checkout
-      - run: pip install ansible-lint
+      - run: pip install ansible-lint --user
       - run: ansible-lint ./*.yml
