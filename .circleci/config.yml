@@ -4,6 +4,9 @@ jobs:
   build:
     docker:
       - image: circleci/python:latest
+    branches:
+      ignore:
+        - master
     working_directory: ~/work/repo
     steps:
       - checkout
